@@ -13,8 +13,9 @@ Welcome to your new Neovim setup! This configuration is designed to be beginner-
 
 ### Core Functionality
 - **Plugin Manager**: lazy.nvim (auto-installs plugins)
-- **File Explorer**: nvim-tree (sidebar file browser)
+- **File Explorers**: nvim-tree (sidebar browser), Neo-tree (git-aware tree), Oil (buffer-style navigator)
 - **Fuzzy Finder**: Telescope (find files, text, etc.)
+
 - **Syntax Highlighting**: Treesitter (better code highlighting)
 - **LSP Support**: Language Server Protocol (code intelligence)
 - **Autocompletion**: nvim-cmp (smart code completion)
@@ -28,8 +29,15 @@ Welcome to your new Neovim setup! This configuration is designed to be beginner-
 - **Auto-pairs**: nvim-autopairs (auto-close brackets)
 - **Comments**: Comment.nvim (easy commenting)
 - **Key Hints**: which-key (shows available keybindings)
+- **Start Screen**: dashboard-nvim (project overview on launch)
+
+### Workflow Tools
+- **Integrated Terminal**: toggleterm.nvim (floating, vertical, or horizontal terminals)
+- **Symbols Outline**: outline.nvim (code tree for quick navigation)
+- **Todo Tracker**: todo-comments.nvim (highlight and jump between TODO/FIXME notes)
 
 ## Essential Keybindings
+
 
 **Leader Key**: `Space` - Many commands start with the leader key
 
@@ -51,7 +59,17 @@ Welcome to your new Neovim setup! This configuration is designed to be beginner-
     - `Enter` - Open file
     - `g?` - Show help
 
+### Alternative Explorer (Neo-tree)
+- `<Space>n` - Toggle Neo-tree on the right
+- `<Space>nf` - Focus Neo-tree window
+- `<Space>ng` - Open Neo-tree git status view
+
+### Directory Browser (Oil)
+- `-` - Open parent directory in the current window
+- `<Space>-` - Open parent directory in a floating window
+
 ### Finding Files (Telescope)
+
 - `<Space>ff` - Find files
 - `<Space>fg` - Find text (grep)
 - `<Space>fb` - Find buffers (open files)
@@ -79,7 +97,14 @@ Welcome to your new Neovim setup! This configuration is designed to be beginner-
 - `Ctrl-Left` - Decrease width
 - `Ctrl-Right` - Increase width
 
+### Terminal
+- `<C-\>` - Toggle the last terminal
+- `<Space>tf` - Toggle floating terminal
+- `<Space>th` - Toggle horizontal terminal
+- `<Space>tv` - Toggle vertical terminal
+
 ### Code Navigation (when LSP is active)
+
 - `gd` - Go to definition
 - `gD` - Go to declaration
 - `gi` - Go to implementation
@@ -93,7 +118,16 @@ Welcome to your new Neovim setup! This configuration is designed to be beginner-
 - `<Space>ca` - Code actions
 - `<Space>f` - Format document
 
+### Symbols Outline
+- `<Space>s` - Toggle symbols outline panel
+
+### Todo Comments
+- `<Space>tt` - Show TODO items in Telescope
+- `]t` - Jump to next TODO/FIX comment
+- `[t` - Jump to previous TODO/FIX comment
+
 ### Editing
+
 - `gcc` - Toggle line comment
 - `gc` (in visual mode) - Comment selection
 - `Ctrl-Space` - Trigger completion
